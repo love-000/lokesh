@@ -47,12 +47,12 @@
     
 
 <body>
+  {% include 'nav.html' %}
+  <video id="sample_video" class="object-fit-fill rounded" autoplay>
+    <source src="https://lokesh--love1506262015.repl.co/static/recruiter_video.mp4" type="video/mp4">
+  </video>
 <div class="container">
 <h1>Recruiter.Com</h1>
-<video id="sample_video" class="object-fit-fill rounded" autoplay>
-      <source src="https://lokesh--love1506262015.repl.co/static/recruiter_video.mp4" type="video/mp4">
-    </video>
-<h2>About Recruiter.com</h2>
 
   <div class="border border-success p-2 mb-2 border-opacity-25">
     <h4>Welcome to Recruiter.com</h4>
@@ -112,10 +112,10 @@
   </div>
 
   <div style="text-align: center;">
-    <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
-    <p class="mt-4">Copyright 2023, Recruiter.Com</p>
+    <a href="mailto:l9350233978@gmail.com?subject=post%20about%20job%20%3Cput%20your%20job%20name%3E&body=My%20Name%3A%20____%0D%0AMy%20job%20post%20details%20is%20this%3A%20____%0D%0AMy%20contact%20details%3A%20____%0D%0A" type="button" class="btn btn-primary btn-lg">Contact Us</a>
   </div>
 
 </div>
+  {% include 'footer.html' %}
   </body>
 </html> 
