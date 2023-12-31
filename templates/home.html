@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lokesh web</title>
+    <style>
+      h1{
+        font-size: 50px;
+        font-family: Roboto;
+        font-weight: normal;
+        text-align: center;
+        color: rgb(178,190,181);
+      }
+      #sample_video{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+      h2{
+        font-size: 25px;
+        font-family: Roboto;
+        font-weight: normal;
+        text-align: center;
+        color: rgb(178,190,181);
+      }
+      h5{
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: normal;
+        text-align: center;
+        color: rgb(178,190,181);
+      }
+      h4{
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: normal;
+        text-align: center;
+        color: rgb(178,190,181);
+      }
+      
+      
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  <body>
+<div class="container">
+<h1>Recruiter.Com</h1>
+<video id="sample_video" class="object-fit-fill rounded" autoplay>
+      <source src="https://lokesh--love1506262015.repl.co/static/recruiter_video.mp4" type="video/mp4">
+    </video>
+<h2>About Recruiter.com</h2>
+<h4>Welcome to Recruiter.com</h4>
+<h5>
+At Recruiter.com, we're dedicated to revolutionizing the recruitment process. Our platform serves as a pivotal hub connecting talented individuals with innovative companies, simplifying hiring procedures and fostering valuable professional relationships.
+</h5>
+<h4>Our Mission</h4>
+<h5>
+  Our mission is to redefine the recruitment landscape, making it easier for job seekers to find their dream careers and for employers to discover exceptional talent. We're committed to creating an intuitive and efficient platform that empowers both job seekers and employers to achieve their goals.
+</h5>
+<h4>What We Offer</h4>
+<h5>
+  For Job Seekers:
+  - Access to a wide array of job listings spanning diverse industries and locations.
+  - Intuitive tools for effortless job searching and application management.
+  - Personalized features to track applications and receive updates on relevant opportunities.
+  - A secure platform to showcase skills, upload resumes/CVs, and stand out to potential employers.
+</h5>
+<h4>For Companies</h4>
+<h5>
+  - A platform to showcase company culture, values, and available job positions.
+  - Easy-to-use tools to post job openings, efficiently manage applications, and engage with prospective hires.
+  - Access to a talent pool of qualified and motivated candidates.
+</h5>
+<h4>Why Choose Us</h4>
+<h5>
+  - User-Centric Approach: We prioritize user experience, ensuring a seamless and rewarding interaction for job seekers and employers within our platform.
+  - Security and Privacy: Your data and information are protected through state-of-the-art security measures, maintaining confidentiality and trust.
+  - Innovation and Adaptability: We continuously evolve our platform to stay ahead in the dynamic job market, providing cutting-edge solutions.
+</h5>
+<h4>Get Started Today</h4>
+<h5>
+Join Recruiter.com today and embark on a journey to find your ideal job or discover exceptional talent for your company. Let's unlock new possibilities and build successful careers together.
+</h5>
+
+    <h2>Open Positions</h2>
+  <div>
+    {% for job in jobs %}
+       {% include 'jobitem.html' %}
+    {% endfor %}
+  </div>
+
+  <div style="text-align: center;">
+    <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
+    <p class="mt-4">Copyright 2023, Recruiter.Com</p>
+  </div>
+
+</div>
+  </body>
+</html> 
